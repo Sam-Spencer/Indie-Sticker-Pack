@@ -19,8 +19,12 @@ internal class IndieIconPreviewGenerator {
         return iconNames
     }
     
-    class func iconChunk() -> Int {
-        return 0
+    static var isLargerScreen: Bool {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return true
+        } else {
+            return false
+        }
     }
     
 }

@@ -11,16 +11,20 @@ import UIKit
 
 struct IndieAppPack: View {
     
-    var isLargerScreen: Bool {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return true
-        } else {
-            return false
-        }
-    }
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack() {
+            Button(action: { 
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "chevron.compact.down")
+                .foregroundColor(.white)
+                .font(.system(size: 30, weight: .semibold, design: .default))
+                    .opacity(0.8)
+            }
+            .padding(.top, 20)
+            
             HStack(alignment: .bottom) {
                 Image("StickerPackIcon").resizable()
                     .padding()
@@ -28,12 +32,12 @@ struct IndieAppPack: View {
                     .frame(minWidth: 56, idealWidth: 80, maxWidth: 110, minHeight: 56, idealHeight: 80, maxHeight: 110, alignment: .leading)
                 Spacer()
             }
-            .padding(.top, 50)
+            .padding(.top, 20)
             .padding(.leading)
             
             Text("Get a limited-time sticker pack from your favorite indie iOS apps.\n\nGive back to our global community.")
                 .foregroundColor(.white)
-                .font(.system(size: (isLargerScreen ? 56 : 30), weight: .heavy, design: .default))
+                .font(.system(size: (IndieIconPreviewGenerator.isLargerScreen ? 56 : 30), weight: .heavy, design: .default))
                 .lineSpacing(5)
                 .padding()
                 .padding(.horizontal)
@@ -86,7 +90,7 @@ struct IndieAppPack: View {
             
             Spacer()
             
-            Text(isLargerScreen ? "All proceeds will be split 50/50 between the World Health Organization's COVID-19 Solidarity Response Fund and the Equal Justice Initiative for combatting racial and economic injustice." : "All proceeds will be split 50/50 between the WHO's COVID-19 Solidarity Response Fund and the Equal Justice Initiative.")
+            Text(IndieIconPreviewGenerator.isLargerScreen ? "All proceeds will be split 50/50 between the World Health Organization's COVID-19 Solidarity Response Fund and the Equal Justice Initiative for combatting racial and economic injustice." : "All proceeds will be split 50/50 between the WHO's COVID-19 Solidarity Response Fund and the Equal Justice Initiative.")
                 .foregroundColor(.white)
                 .font(.system(size: 14, weight: .regular, design: .default))
                 .padding(.horizontal, 50)
