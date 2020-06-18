@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GiveBack: View {
     
-    var action: (() -> Void)
+    var action: (() -> Void)?
     
     @State var presentingStickerPromo: Bool = false
     
@@ -37,7 +37,9 @@ struct GiveBack: View {
         )
             .onTapGesture {
                 self.presentingStickerPromo.toggle()
-                self.action()
+                if self.action != nil {
+                    self.action!()
+                }
         }
         .frame(minWidth: 100, idealWidth: 160, maxWidth: 370, minHeight: 50, idealHeight: 60, maxHeight: 80, alignment: .center)
         .sheet(isPresented: $presentingStickerPromo) {
