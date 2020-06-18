@@ -25,3 +25,7 @@ There are two integration options: **SwiftUI** or **UIKit**. Currently, the **Sw
  1. Copy contents of the `Sources` folder into your app's project.  
  2. Delete the `SwiftUI` folder.
  3. Somewhere in your app, display the `IndieStickerView` UIView.
+
+## Making it through App Review
+
+Details on this are coming soon. We don't want you to have any trouble with Apple Reviewers.
