@@ -4,7 +4,9 @@ Get a limited-time sticker pack from your favorite indie iOS apps. Give back to 
 
 Developers participating in this initiative ([learn more](https://www.indiestickerpack.com)) can essentially drag-and-drop a pre-fab IndieStickerPack View into their projects to inform users and direct them to purchase and donation options.
 
-Getting setup everything integrated is simple and should only take a few minutes.
+Getting everything setup and integrated is simple and should only take a few minutes.
+
+<img src="https://uploads-ssl.webflow.com/5ec8898006d25c90610c6a0b/5ee5404db15d0580e02569e8_Open%20Graph%20Art.png" width=100%/>
 
 ## Integration
 
