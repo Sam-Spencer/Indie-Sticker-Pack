@@ -28,7 +28,7 @@ struct GiveBack: View {
                         .font(.system(size: 22, weight: .semibold, design: .default))
                         .padding(.vertical)
                         .padding(.leading)
-                    Text("Give back and get stickers")
+                    Text("Do Good. Get Stickers.")
                         .foregroundColor(.white)
                         .font(.system(size: 24, weight: .semibold, design: .default))
                         .padding(.vertical)

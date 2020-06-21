@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A62D1AD8249F112700ECBCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A68E4969249BA27000CA3B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68E496B249BA27000CA3B75 /* PreviewGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewGenerator.swift; sourceTree = "<group>"; };
 		A68E496C249BA27000CA3B75 /* ArrayChunker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayChunker.swift; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		A6B3FA54249AB61C00F904F4 = {
 			isa = PBXGroup;
 			children = (
+				A62D1AD8249F112700ECBCC3 /* README.md */,
 				A68E4967249BA27000CA3B75 /* Sources */,
 				A6B3FA5F249AB61C00F904F4 /* Indie App Pack */,
 				A68E4987249BB18600CA3B75 /* Indie App Pack UIKit */,

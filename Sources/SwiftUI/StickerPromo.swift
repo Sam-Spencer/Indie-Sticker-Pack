@@ -32,15 +32,16 @@ struct IndieAppPack: View {
                     .frame(minWidth: 56, idealWidth: 80, maxWidth: 110, minHeight: 56, idealHeight: 80, maxHeight: 110, alignment: .leading)
                 Spacer()
             }
-            .padding(.top, 20)
+            .padding(.top)
             .padding(.leading)
             
-            Text("Get a limited-time sticker pack from your favorite indie iOS apps.\n\nGive back to our global community.")
+            Text("Get a limited-time sticker pack from your favorite indie iOS apps.\n\nDo good for our global community.")
                 .foregroundColor(.white)
                 .font(.system(size: (IndieIconPreviewGenerator.isLargerScreen ? 56 : 30), weight: .heavy, design: .default))
                 .lineSpacing(5)
                 .padding()
                 .padding(.horizontal)
+                .fixedSize(horizontal: false, vertical: true)
             
             Button(action: { 
                 UIApplication.shared.open(URL(string: "https://www.indiestickerpack.com/product/stickerpack")!, options: [:])
@@ -89,12 +90,6 @@ struct IndieAppPack: View {
                 .padding(.horizontal)
             
             Spacer()
-            
-            Text(IndieIconPreviewGenerator.isLargerScreen ? "All proceeds will be split 50/50 between the World Health Organization's COVID-19 Solidarity Response Fund and the Equal Justice Initiative for combatting racial and economic injustice." : "All proceeds will be split 50/50 between the WHO's COVID-19 Solidarity Response Fund and the Equal Justice Initiative.")
-                .foregroundColor(.white)
-                .font(.system(size: 14, weight: .regular, design: .default))
-                .padding(.horizontal, 50)
-                .padding(.bottom, 10)
             
             HStack() {
                 Button(action: { 

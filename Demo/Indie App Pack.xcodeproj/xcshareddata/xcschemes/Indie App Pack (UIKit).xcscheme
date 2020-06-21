@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A68E4985249BB18600CA3B75"
-               BuildableName = "Indie App Pack UIKit.app"
+               BuildableName = "Stickers UIKit.app"
                BlueprintName = "Indie App Pack UIKit"
                ReferencedContainer = "container:Indie App Pack.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A68E4985249BB18600CA3B75"
-            BuildableName = "Indie App Pack UIKit.app"
+            BuildableName = "Stickers UIKit.app"
             BlueprintName = "Indie App Pack UIKit"
             ReferencedContainer = "container:Indie App Pack.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A68E4985249BB18600CA3B75"
-            BuildableName = "Indie App Pack UIKit.app"
+            BuildableName = "Stickers UIKit.app"
             BlueprintName = "Indie App Pack UIKit"
             ReferencedContainer = "container:Indie App Pack.xcodeproj">
          </BuildableReference>
